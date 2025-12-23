@@ -9,9 +9,12 @@ import (
 )
 
 func Connect() *sql.DB {
-	dsn := "host=localhost port=5432 user=rakshiths password=" +
-		os.Getenv("DB_PASSWORD") +
-		" dbname=myapp_db sslmode=disable"
+	dsn := "host=" + os.Getenv("DB_HOST") +
+		" port=" + os.Getenv("DB_PORT") +
+		" user=" + os.Getenv("DB_USER") +
+		" password=" + os.Getenv("DB_PASSWORD") +
+		" dbname=" + os.Getenv("DB_NAME") +
+		" sslmode=disable"
 
 	db, err := sql.Open("postgres", dsn)
 	if err != nil {
