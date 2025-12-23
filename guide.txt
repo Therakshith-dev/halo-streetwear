@@ -1,0 +1,37 @@
+halo streetwear
+
+this is a small full stack project made for college submission
+
+basically its a website with login and some pages
+backend is in go
+database is postgres
+
+login works using email and password
+password is hashed using bcrypt
+if login is correct dashboard opens
+if not it goes back to login
+
+there is a products page
+then checkout page
+payment is not real just for demo
+it shows out of stock message
+
+frontend is simple html css
+no frameworks used
+some js for small stuff
+
+database runs locally
+credentials are not uploaded to github
+they are stored in env variables
+
+to run
+start postgres
+set env vars
+go run .
+
+test login
+test@halo.com
+password123
+
+this project is just to show backend working
+!!! not meant for real use
