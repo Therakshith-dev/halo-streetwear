@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About — HALO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .hero {
+      height: 70vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1520975922284-4f1c7a4d6c4d");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 15px;
+      color: #bbb;
+      max-width: 700px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 14px;
+      filter: grayscale(20%);
+      transition: transform 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.03);
+    }
+
+    .quote {
+      background: #111;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .quote h3 {
+      font-size: 26px;
+      letter-spacing: 2px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .quote span {
+      display: block;
+      margin-top: 16px;
+      font-size: 13px;
+      color: #777;
+      letter-spacing: 1px;
+    }
+
+    .cta {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #fff;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+    }
+
+    .brand {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 12px;
+      color: #555;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div>
+      <h1>HALO</h1>
+      <p>
+        Streetwear built for discipline, movement, and the mindset
+        that never clocks out.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>OUR STORY</h2>
+    <p>
+      HALO was born from the space between training and lifestyle —
+      where performance meets presence. Built for young athletes,
+      creators, and grinders who carry the same intensity outside the gym
+      as they do inside it.
+      <br><br>
+      Every piece is designed to move, endure, and represent a mindset:
+      consistency over motivation. Discipline over hype.
+    </p>
+
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+      <img src="https://images.unsplash.com/photo-1520975682030-7c9bb36d23e3">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
+    </div>
+  </section>
+
+  <section class="quote">
+    <h3>
+      “We don’t wear HALO to be seen — we wear it because it reflects
+      who we already are.”
+    </h3>
+    <span>— HALO PHILOSOPHY</span>
+  </section>
+
+  <section class="cta">
+    <a href="/checkout">EXPLORE THE COLLECTION</a>
+  </section>
+
+  <div class="brand">
+    © HALO STREETWEAR
+  </div>
+
+</body>
+</html>
